@@ -411,9 +411,6 @@
                 @foreach ($seaman_experiences as $index => $sea)
                     <div class="border border-gray-200 rounded-lg p-4 relative">
 
-                        <button type="button" wire:click="removeItem('seaman_experiences', {{ $index }})"
-                            class="absolute top-2 right-2 text-red-500 hover:text-red-700">✕</button>
-
                         <div class="grid md:grid-cols-3 gap-4">
                             <input type="text" wire:model="seaman_experiences.{{ $index }}.vessel_name"
                                 placeholder="Nama Kapal *" class="input border-gray-300 rounded-md">
@@ -452,8 +449,16 @@
                                 class="textarea md:col-span-3 border-gray-300 rounded-md"></textarea>
 
                         </div>
+                        <div>
+                            <button type="button" wire:click="removeItem('seaman_experiences', {{ $index }})"
+                                class="bg-red-500 rounded text-white my-2 px-4 py-2">✕ Hapus</button>
+                            <button type="button" wire:click="addItem('seaman_experiences')"
+                                class="px-4 py-2 bg-emerald-600 text-white rounded hover:bg-emerald-700">+
+                                Tambah</button>
+                        </div>
                     </div>
                 @endforeach
+
             </div>
         @endif
 
