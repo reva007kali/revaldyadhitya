@@ -4,7 +4,7 @@
     "src": "public/image/hero-bg.png"
   },
   "resources/css/app.css": {
-    "file": "assets/app-Dkkt4KMH.css",
+    "file": "assets/app-D6D3NTdO.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -12,7 +12,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-l0sNRNKZ.js",
+    "file": "assets/app-P9ztMTeY.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
