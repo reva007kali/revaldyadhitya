@@ -33,11 +33,12 @@
                 <div class="swiper-wrapper py-10">
                     @foreach ($templates as $template)
                         <div class="swiper-slide">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-green"></div>
                             <div wire:click="$set('cv_template_id', {{ $template->id }})"
                                 class="cursor-pointer
                                 rounded-lg p-3 shadow hover:shadow-lg transition">
                                 <img src="{{ asset('storage/' . $template->image) }}" alt="{{ $template->name }}"
-                                    class="w-full  object-cover rounded-lg mb-2">
+                                    class="w-full  object-cover rounded-lg mb-2" loading="lazy">
                                 <h3 class="text-center font-semibold text-sm">{{ $template->name }}</h3>
                             </div>
                         </div>

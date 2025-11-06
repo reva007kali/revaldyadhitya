@@ -2,9 +2,13 @@ const swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
     grabCursor: true,
+    lazy: true,
+
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        dynamicBullets: true,
+        lazy: true,
     },
     navigation: {
         nextEl: ".swiper-button-next",

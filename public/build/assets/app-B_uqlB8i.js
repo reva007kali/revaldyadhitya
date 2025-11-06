@@ -1,0 +1,1 @@
+new Swiper(".mySwiper",{slidesPerView:1,spaceBetween:20,grabCursor:!0,lazy:!0,pagination:{el:".swiper-pagination",clickable:!0,dynamicBullets:!0,lazy:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{640:{slidesPerView:2,spaceBetween:20},1024:{slidesPerView:3,spaceBetween:30}},preventClicks:!0,preventClicksPropagation:!0});
