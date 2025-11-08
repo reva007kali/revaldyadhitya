@@ -1,10 +1,6 @@
 {
-  "public/image/hero-bg.png": {
-    "file": "assets/hero-bg-C9qDW13f.png",
-    "src": "public/image/hero-bg.png"
-  },
   "resources/css/app.css": {
-    "file": "assets/app-PeRyPiVw.css",
+    "file": "assets/app-CtBGf-WK.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -12,7 +8,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-B_uqlB8i.js",
+    "file": "assets/app-D57JPd7c.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
