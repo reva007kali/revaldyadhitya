@@ -8,18 +8,27 @@
     <title>{{ $title ?? 'CV Maker' }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
+
+    @filamentStyles
+
+
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
 
 </head>
 
 <body class="">
     {{ $slot }}
 
-<!-- Swiper JS -->
+    @livewire('notifications') {{-- Only required if you wish to send flash notifications --}}
 
+    @filamentScripts
 </body>
 
 </html>

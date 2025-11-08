@@ -11,12 +11,14 @@ use App\Models\CvTemplate;
 use App\Models\Experience;
 use App\Models\Certificate;
 use Livewire\WithFileUploads;
+use Filament\Forms;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Forms\Concerns\InteractsWithForms;
 use App\Models\SeamanExperience;
 
 class CvForm extends Component
 {
-    use WithFileUploads;
-    
+    use WithFileUploads;    
 
     public $templates;
 
@@ -39,6 +41,7 @@ class CvForm extends Component
     public $languages = [];
     public $certificates = [];
     public $seaman_experiences = [];
+
 
     protected $rules = [
         'photo' => 'nullable|image|max:2048', // <= validasi foto max 2MB
